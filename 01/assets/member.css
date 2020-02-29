@@ -1,0 +1,83 @@
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h3 {
+   padding-top: 20px;
+}
+
+/*タブのスタイル*/
+.members {
+  width: calc(100%/4);
+  height: 50px;
+  background-color: #d9d9d9;
+  line-height: 60px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.members:hover {
+  opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="members"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+/* 画像に対する変更 */
+img {
+    display: inline;
+    height: 300px;
+    width: auto;
+
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+
+}
+
+.prof {
+    display: block;
+    margin: 0% auto auto 0%;
+    text-align: center;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#fuji:checked ~ #fuji_content,
+#turu:checked ~ #turu_content,
+#tatu:checked ~ #tatu_content,
+#asahina:checked ~ #asahina_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .members {
+  background-color: #5ab4bd;
+  color: #fff;
+}
+
+/* リストの調整 */
+ul {
+   list-style: none;
+   padding-left: 20px;
+}

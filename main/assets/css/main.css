@@ -1,0 +1,41 @@
+
+h1,h2,h3,a,p {
+    font-family: "M PLUS Rounded 1c";
+}
+
+/* TOP画面要素の定義 */
+.main-box {
+  border:solid 10px black;
+  border-radius: 3em;
+}
+
+.nav-box a {
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "M PLUS Rounded 1c";
+}
+
+.nav-box a:hover {
+  color: dimgray;
+}
+
+
+/* 過去公演画面  */
+
+h1 {
+    font-family: "M PLUS Rounded 1c";
+}
+
+.stage-list a {
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "M PLUS Rounded 1c";
+}
+
+
+
+.stage-list {
+  list-style: none;
+}

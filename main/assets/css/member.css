@@ -44,7 +44,7 @@ input[name="members"] {
 }
 
 /* 画像に対する変更 */
-img {
+.member-img {
     display: inline;
     height: 300px;
     width: auto;
